@@ -345,13 +345,12 @@ body {
     background-color: #171819;
     text-align: center;
 }
-/* @media screen and (max-width:992px){
-
-} */
-@media screen and (max-width:768px){
+@media screen and (max-width:992px){
     .container__wrapper {
         padding: 0 15px;
     }
+}
+@media screen and (max-width:768px){
     .about__inner {
         flex-direction: column;
     }
