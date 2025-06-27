@@ -29,6 +29,7 @@ body {
     text-align: center;
     background: url(../img/header-bg.jpg) no-repeat;
     min-height: 768px;
+    background-size: cover;
 }
 .container__wrapper {
     max-width: 940px;
@@ -124,6 +125,7 @@ body {
 }
 .about__left {
     max-width: 398px;
+    margin-right: 20px;
 }
 .about__title {
     font-size: 20px;
@@ -190,7 +192,7 @@ body {
     padding: 11px 29px;
     background-color: var(--acent-color);
     max-height: 40px;
-    font-size: 13px;
+    font-size: 12px;
     line-height: 15px;
     letter-spacing: 0.5px;
     color: #FFFFFF;
@@ -265,6 +267,7 @@ body {
     border: none;
     outline: none;
     min-width: 250px;
+    margin-right: -4px;
 }
 .newsletter__btn {
 }
@@ -342,6 +345,80 @@ body {
     background-color: #171819;
     text-align: center;
 }
+/* @media screen and (max-width:992px){
 
-
+} */
+@media screen and (max-width:768px){
+    .container__wrapper {
+        padding: 0 15px;
+    }
+    .about__inner {
+        flex-direction: column;
+    }
+    .about__left {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .about__item {
+        width: auto;
+        background-size: cover;
+    }
+    .services__inner {
+        flex-direction: column;
+    }
+    .services__title {
+        padding-bottom: 20px;
+    }
+    .services__text {
+        margin-bottom: 20px;
+    }
+    .section__btn {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:576px){
+    .banner {
+        padding-bottom: 10px;
+    }
+    .navbar {
+        display: block;
+    }
+    .navbar__menu li {
+        margin-right: 15px;
+    }
+    .navbar__logo {
+        margin-bottom: 20px;
+    }
+    .about {
+        padding-bottom: 10px;
+    }
+    .about__right {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .services {
+        padding-bottom: 10px;
+    }
+    .services__inner {
+        flex-direction: column;
+    }
+    .services__grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .newsletter__inner {
+        flex-direction: column;
+    }
+    .newsletter__title {
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+    .columns__inner {
+        flex-direction: column;
+    }
+    .links__menu {
+        flex-direction: column;
+    }
+    .company, .links, .contacts {
+        margin-bottom: 30px;
+    }
+}
 
